@@ -71,4 +71,15 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- NOTE: ------------- THIS IS MY CUSTOM THINGS ---------------
+
+-- This is supposed to remove auto comments on new line
+vim.api.nvim_create_autocmd('BufWinEnter', { command = 'set formatoptions-=cro' })
+
+-- Use whitespaces for tabs
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+
 -- vim: ts=2 sts=2 sw=2 et
