@@ -51,4 +51,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- NOTE: ------------ My custom bindings -------------
+vim.keymap.set({ 'n', 'v' }, '<C-J>', '<C-e>j', { desc = 'Scroll down, keep cursor pos' })
+vim.keymap.set({ 'n', 'v' }, '<C-K>', '<C-y>k', { desc = 'Scroll up, keep cursor pos' })
+
 -- vim: ts=2 sts=2 sw=2 et
